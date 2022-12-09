@@ -48,7 +48,7 @@
                     <h1 class="hero-title">
                         Ефективні рішення для вашого бізнесу
                     </h1>
-                    <button type="button" class="btn">Замовити послугу</button>
+                    <button type="button" class="btn" data-modal-open>Замовити послугу</button>
                 </section>
                 <!--Особливості-->
                 <section class="section">
@@ -61,7 +61,7 @@
                                         <use href="./images/icon.svg#icon-antena"></use>
                                     </svg>
                                 </div>
-                                <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                                <h3 class="title">Увага до деталей</h3>
                                 <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                             </li>
                             <li class="list-item">
@@ -70,7 +70,7 @@
                                         <use href="./images/icon.svg#icon-clock"></use>
                                     </svg>
                                 </div>
-                                <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+                                <h3 class="title">Пунктуальність</h3>
                                 <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                             </li>
                             <li class="list-item">
@@ -79,7 +79,7 @@
                                         <use href="./images/icon.svg#icon-diagram"></use>
                                     </svg>
                                 </div>
-                                <h3 class="title">ПЛАНУВАННЯ</h3>
+                                <h3 class="title">Планування</h3>
                                 <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
                             </li>
                             <li class="list-item icon-astronaut">
@@ -88,7 +88,7 @@
                                         <use href="./images/icon.svg#icon-astronaut"></use>
                                     </svg>
                                 </div>
-                                <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                                <h3 class="title">Сучасні технології</h3>
                                 <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                             </li>
                         </ul>
@@ -100,13 +100,28 @@
                     <h2 class="section-title">Чим ми займаємося</h2>
                     <ul class="work-list list">
                         <li class="item">
-                            <img src="./images/box1.jpg" alt="Набір кода" width="370" />
+                            <div class="work-card">
+                                <img src="./images/box1.jpg" alt="Набір кода" width="370" />
+                                <div class="description">
+                                    <p class="text">Десктопні додатки</p>
+                                </div>
+                            </div>  
                         </li>
                         <li class="item">
-                            <img src="./images/box2.jpg" alt="Адаптаці під телефон" width="370" />
+                            <div class="work-card">
+                                <img src="./images/box2.jpg" alt="Адаптаці під телефон" width="370" />
+                                <div class="description">
+                                    <p class="text">Мобільні додатки</p>
+                                </div>
+                            </div>
                         </li>
                         <li class="item">
-                            <img src="./images/box3.jpg" alt="Вибір кольора" width="370" />
+                            <div class="work-card">
+                                <img src="./images/box3.jpg" alt="Вибір кольора" width="370" />
+                                <div class="description">
+                                    <p class="text">Дизайнерські рішення</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                   </div>
@@ -343,6 +358,21 @@
         </section>
                 
        </footer>
+/*Модальне вікно*/
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <div class="close">
+            <button  type="button" class="close-btn" data-modal-close>
+                <svg class="icon-close">
+                    <use href="./images/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+</div>
+<script src="./js/modal.js"></script>
         </body>
         </html>
          
