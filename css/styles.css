@@ -644,8 +644,6 @@ img {
 .project-card{
     position: relative;
     overflow: hidden;
-    transition: opacity var(--duration-function) var(--timing-function),
-    transform var(--duration-function) var(--timing-function);
 }
 
 .element:hover .project-actions{
@@ -653,21 +651,8 @@ img {
     transform: translatey(0);
 }
 
-.project-actions {
-    position: absolute;
-    padding: 63px 24px;
-    top: 0;
-
-    opacity: 0;
-
-    background: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition: opacity var(--duration-function) var(--timing-function),
-        transform var(--duration-function) var(--timing-function);
-}
-
-
 .project-text{
+       
     width: 322px;
     height: 168px;
     margin: 0;
@@ -677,6 +662,18 @@ img {
     color:var(--primary-white-color);
 }
 
+.project-actions{
+    position: absolute;
+    padding: 63px 24px;
+    top: 0;
+
+    opacity: 0;
+
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: opacity var(--duration-function) var(--timing-function),
+    transform var(--duration-function) var(--timing-function);
+}
 
 .element-text{
     padding: 20px 24px;
