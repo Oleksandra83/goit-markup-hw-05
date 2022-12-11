@@ -471,6 +471,7 @@ img {
 .clients .link-clients:hover,
 .clients .link-clients:focus {
     color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 /*footer*/
